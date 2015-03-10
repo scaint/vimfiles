@@ -29,9 +29,10 @@ add_plugin() {
 }
 
 install() {
+  test "$1" != '--verbose' && q=' -q'
   repo_root=$(git rev-parse --show-toplevel)
   run cd "$repo_root"
-  run git submodule init && git submodule update
+  run git submodule init$q && git submodule update$q
   run cd "$HOME"
   [ -f '.vimrc' -a ! -h '.vimrc' ] && run "mv .vimrc .vimrc_old}"
   [ -d '.vim' -a ! -h '.vim' ] && run "mv .vim .vim_old"
@@ -47,7 +48,7 @@ case $1 in
     add_plugin $2
     ;;
   install)
-    install
+    install $2
     ;;
   *)
     fail 'Unknown command'
