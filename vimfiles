@@ -18,11 +18,11 @@ fail() {
 }
 
 run() {
-    $@; (test $? -eq 0 && ok "$@") || fail "$@"
+    $@; (test $? -eq 0 && ok "$*") || fail "$*"
 }
 
 add_plugin() {
-  plugin_repo="git@github.com:$1.git"
+  plugin_repo="https://github.com/$1.git"
   plugin_name=$(basename $1)
   run "cd $(git rev-parse --show-toplevel)"
   run "git submodule add $plugin_repo .vim/bundle/$plugin_name"
@@ -30,7 +30,9 @@ add_plugin() {
 
 install() {
   repo_root=$(git rev-parse --show-toplevel)
-  run "cd $HOME"
+  run cd "$repo_root"
+  run git submodule init && git submodule update
+  run cd "$HOME"
   [ -f '.vimrc' -a ! -h '.vimrc' ] && run "mv .vimrc .vimrc_old}"
   [ -d '.vim' -a ! -h '.vim' ] && run "mv .vim .vim_old"
   run "ln -sfn $repo_root/.vimrc .vimrc"
