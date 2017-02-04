@@ -61,3 +61,6 @@
 [submodule ".vim/bundle/indentLine"]
 	path = .vim/bundle/indentLine
 	url = https://github.com/Yggdroot/indentLine.git
+[submodule ".vim/bundle/vim-crystal"]
+	path = .vim/bundle/vim-crystal
+	url = https://github.com/rhysd/vim-crystal.git
