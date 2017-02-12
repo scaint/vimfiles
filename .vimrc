@@ -1,5 +1,3 @@
-execute pathogen#infect()
-
 if has("gui_running")
   set lines=30 columns=100
 endif
