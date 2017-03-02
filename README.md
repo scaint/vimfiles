@@ -20,7 +20,6 @@
 * [vim-elixir](https://github.com/elixir-lang/vim-elixir)
 * [vim-endwise](https://github.com/tpope/vim-endwise)
 * [vim-fugitive](https://github.com/tpope/vim-fugitive)
-* [vim-gista](https://github.com/lambdalisue/vim-gista)
 * [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
 * [vim-glsl](https://github.com/tikhomirov/vim-glsl)
 * [vim-haml](https://github.com/tpope/vim-haml)
@@ -30,6 +29,7 @@
 * [vim-rails](https://github.com/tpope/vim-rails)
 * [vim-ruby](https://github.com/vim-ruby/vim-ruby)
 * [vim-slim](https://github.com/slim-template/vim-slim)
+* [vim-test](https://github.com/janko-m/vim-test)
 * [vim-toml](https://github.com/cespare/vim-toml)
 
 ### Optional
@@ -37,3 +37,4 @@
 Run `:pa plugin_name` to load an optional plugin.
 
 * [dbext.vim](https://github.com/vim-scripts/dbext.vim)
+* [vim-gista](https://github.com/lambdalisue/vim-gista)
