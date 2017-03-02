@@ -1,7 +1,3 @@
-if has("gui_running")
-  set lines=30 columns=100
-endif
-
 set number
 set noswapfile
 set sessionoptions-=options
@@ -22,3 +18,4 @@ let g:indentLine_faster = 1
 nmap <Tab> >>
 nmap <S-Tab> <<
 imap <S-Tab> <Esc><<i
+nmap <leader>t :TestNearest<CR>
