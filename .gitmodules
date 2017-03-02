@@ -67,3 +67,6 @@
 [submodule "dbext.vim"]
 	path = .vim/pack/bundle/opt/dbext.vim
 	url = https://github.com/vim-scripts/dbext.vim.git
+[submodule "vim-test"]
+	path = .vim/pack/bundle/start/vim-test
+	url = https://github.com/janko-m/vim-test.git
