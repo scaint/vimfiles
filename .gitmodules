@@ -70,3 +70,9 @@
 [submodule "vim-test"]
 	path = .vim/pack/bundle/start/vim-test
 	url = https://github.com/janko-m/vim-test.git
+[submodule ".vim/pack/bundle/opt/vim-pug"]
+	path = .vim/pack/bundle/opt/vim-pug
+	url = git://github.com/digitaltoad/vim-pug.git
+[submodule ".vim/pack/bundle/opt/vim-vue"]
+	path = .vim/pack/bundle/opt/vim-vue
+	url = https://github.com/posva/vim-vue.git
